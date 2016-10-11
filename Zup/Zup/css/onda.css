@@ -1,0 +1,619 @@
+/*-----------------------------------------------CSS-RESET-START------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+    width: 36em;
+    margin: 6px 6px;
+    border: 1px solid #666;
+}
+
+thead {
+    background: linear-gradient(#77507A, #68466A);
+    border-top: 1px solid #a5a5a5;
+    border-bottom: 1px solid #a5a5a5;
+}
+
+tr:hover {
+  background-color:#3d80df;
+  color: #fff;
+}
+thead tr:hover {
+  background-color: transparent;
+  color: inherit;
+}
+tr:nth-child(even) {
+    background-color: #edf5ff;
+}
+th {
+  font-weight: normal;
+  text-align: left;
+  color: #FFF;
+}
+th, td {
+  padding: 1.1em 5em;
+}
+
+/*-----------------------------------------------CSS-RESET-END------------------------------------------------*/
+
+/*-----------------------------------------------LOGIN.HTML-START------------------------------------------------*/
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    font: 15px arial;
+    background: #330033;
+    background: -webkit-radial-gradient(circle, #613663, #330033); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(circle, #613663, #330033); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(circle, #613663, #330033); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(circle, #613663, #330033); /* Standard syntax (must be last) */
+
+}
+
+.login {
+    width: 320px;
+	height: 220px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -160px;
+	margin-top: -110px;    
+}
+
+.login .header {
+    float: left;
+    width: 100%;
+    height: 50px;
+    background: #68466A;
+    background: -webkit-linear-gradient(#77507A, #68466A); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#77507A, #68466A); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#77507A, #68466A); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#77507A, #68466A); /* Standard syntax (must be last) */
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.login .header h3 {
+    float: left;
+    margin: 15px 0 15px 15px;
+    font-weight: bolder;
+    color: #FFF;
+}
+
+.login .header .custFontAwesome {
+    float: right;
+    margin: 15px 15px 15px 0;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.login .sect {
+    float: left;
+    width: 100%;
+    height: 170px;
+    background: #F2F2F2;
+    text-align: center;
+}
+
+.login .sect input {
+    float: left;
+    width: 273px;
+    margin: 15px 15px 0 15px;
+    height: 36px;
+    background: #F0EEF0;
+    border: 1px solid #E4E3E4;
+}
+
+.login .sect input[type=text], .login .sect input[type=password] {
+    padding-left: 15px;
+    font-size: 11px;
+    font-weight: bolder;
+}
+
+::-webkit-input-placeholder {
+    color: #AAA;
+}
+
+:-moz-placeholder {
+    color: #AAA;
+}
+
+::-moz-placeholder {
+    color: #AAA;
+}
+
+:-ms-input-placeholder {  
+    color: #AAA;
+}
+
+.login .sect .custFontAwesome1 {
+    position: absolute;
+    right: 30px;
+    top: 77px;
+    color: #B8B8B8;
+}
+
+.login .sect .custFontAwesome2 {
+    position: absolute;
+    right: 30px;
+    top: 133px;
+    color: #B8B8B8;
+}
+
+.login .sect button {
+    float: left;
+    height: 30px;
+    width: 75px;
+    background: #68466A;
+    background: -webkit-linear-gradient(#77507A, #68466A); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#77507A, #68466A); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#77507A, #68466A); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#77507A, #68466A); /* Standard syntax (must be last) */
+    border-radius: 3px;
+    border: 0;
+    color: #FFF;
+    font-weight: bolder;
+    font-size: 11px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.login .sect a {
+    float: left;
+    color: #B8B8B8;
+    text-decoration: none;
+    font-size: 11px;
+    margin-top: 23px;
+    font-weight: bolder;
+}
+
+.login .sect .division {
+    float: left;
+    border-right: 1px solid #B8B8B8;
+    margin: 20px 10px 20px 10px;
+    height: 20px;
+}
+
+.loginSenha {
+    display:none;
+    width:320px;
+    height:220px;
+    position:absolute;
+    left: 49.3%;
+    top: 85%;
+    margin-left: -160px;
+    margin-top: -110px;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px  
+}
+
+.loginSenha .header {
+    float: left;
+    width: 100%;
+    height: 50px;
+    background: #68466A;
+    background: -webkit-linear-gradient(#77507A, #68466A); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#77507A, #68466A); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#77507A, #68466A); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#77507A, #68466A); /* Standard syntax (must be last) */
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.loginSenha .header h3 {
+    float: left;
+    margin: 15px 0 15px 15px;
+    font-weight: bolder;
+    color: #FFF;
+}
+
+.loginSenha .header .custFontAwesome {
+    float: right;
+    margin: 15px 15px 15px 0;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.loginSenha .sect {
+    float: left;
+    width: 100%;
+    height: 170px;
+    background: #F2F2F2;
+    text-align: center;
+}
+
+.loginSenha .sect input {
+    float: left;
+    width: 273px;
+    margin: 15px 15px 0 15px;
+    height: 36px;
+    background: #F0EEF0;
+    border: 1px solid #E4E3E4;
+}
+
+.loginSenha .sect input[type=text] {
+    padding-left: 15px;
+    font-size: 11px;
+    font-weight: bolder;
+}
+
+.loginSenha .sect .custFontAwesome1 {
+    position: absolute;
+    right: 38px;
+    top: 88px;
+    color: #B8B8B8;
+}
+
+.loginSenha .sect .custFontAwesome2 {
+    position: absolute;
+    right: 38px;
+    top: 144px;
+    color: #B8B8B8;
+}
+
+.loginSenha .sect button {
+    float: left;
+    height: 30px;
+    width: 75px;
+    background: #68466A;
+    background: -webkit-linear-gradient(#77507A, #68466A); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#77507A, #68466A); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#77507A, #68466A); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#77507A, #68466A); /* Standard syntax (must be last) */
+    border-radius: 3px;
+    border: 0;
+    color: #FFF;
+    font-weight: bolder;
+    font-size: 11px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.loginSenha .sect a {
+    float: left;
+    color: #B8B8B8;
+    text-decoration: none;
+    font-size: 11px;
+    margin-top: 23px;
+    font-weight: bolder;
+}
+
+.loginSenha .sect .division {
+    float: left;
+    border-right: 1px solid #B8B8B8;
+    margin: 20px 10px 20px 10px;
+    height: 20px;
+}
+
+.errorInput {
+    font-size: 12px;
+    margin-left: 110px;
+    color: red;
+}
+
+/*-----------------------------------------------LOGIN.HTML-END------------------------------------------------*/
+
+/*-----------------------------------------------REGISTER.HTML-START------------------------------------------------*/
+
+.register {
+    width: 768px;
+    height: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -384px;
+    margin-top: -200px;
+}
+
+.register .header {
+    float: left;
+    width: 100%;
+    height: 50px;
+    background: #68466A;
+    background: -webkit-linear-gradient(#77507A, #68466A); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#77507A, #68466A); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#77507A, #68466A); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#77507A, #68466A); /* Standard syntax (must be last) */
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.register .header h3 {
+    float: left;
+    margin: 15px 0 15px 15px;
+    font-weight: bolder;
+    color: #FFF;
+}
+
+.register .header .custFontAwesome {
+    float: right;
+    margin: 15px 15px 15px 0;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.register .sect {
+    float: left;
+    width: 100%;
+    background: #F2F2F2;
+    text-align: center;
+}
+
+.register .sect input {
+    float: left;
+    width: 42%;
+    margin: 21.5px 21.5px 0 0;
+    height: 36px;
+    background: #F0EEF0;
+    border: 1px solid #E4E3E4;
+}
+
+.register .sect input:nth-child(odd) {
+    margin-left: 21.5px;
+}
+
+.register .sect input[type=text], .register .sect input[type=email] {
+    padding-left: 15px;
+    font-size: 11px;
+    font-weight: bolder;
+}
+
+.register .sect button {
+    float: left;
+    height: 30px;
+    width: 75px;
+    background: #68466A;
+    background: -webkit-linear-gradient(#77507A, #68466A); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#77507A, #68466A); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#77507A, #68466A); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#77507A, #68466A); /* Standard syntax (must be last) */
+    border-radius: 3px;
+    border: 0;
+    color: #FFF;
+    font-weight: bolder;
+    font-size: 11px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.register .sect a {
+    float: left;
+    color: #B8B8B8;
+    text-decoration: none;
+    font-size: 11px;
+    margin-top: 23px;
+    font-weight: bolder;
+}
+
+.register .sect .custFontAwesome1 {
+    position: absolute;
+    color: #B8B8B8;
+    cursor: pointer;
+    top: 83px;
+    right: 420px;
+}
+
+.register .sect .custFontAwesome2 {
+    position: absolute;
+    color: #B8B8B8;
+    cursor: pointer;
+    top: 83px;
+    right: 35px;
+}
+
+.register .sect .custFontAwesome3 {
+    position: absolute;
+    color: #B8B8B8;
+    cursor: pointer;
+    top: 146px;
+    right: 420px;
+}
+
+.register .sect .custFontAwesome4 {
+    position: absolute;
+    color: #B8B8B8;
+    cursor: pointer;
+    top: 146px;
+    right: 35px;
+}
+
+.register .sect .custFontAwesome5 {
+    position: absolute;
+    color: #B8B8B8;
+    cursor: pointer;
+    top: 207px;
+    right: 420px;
+}
+
+.register .sect .custFontAwesome6 {
+    position: absolute;
+    color: #B8B8B8;
+    cursor: pointer;
+    top: 207px;
+    right: 35px;
+}
+
+.register .sect .custFontAwesome7 {
+    position: absolute;
+    color: #B8B8B8;
+    cursor: pointer;
+    top: 270px;
+    right: 420px;
+}
+
+.register .sect .custFontAwesome8 {
+    position: absolute;
+    color: #B8B8B8;
+    cursor: pointer;
+    top: 270px;
+    right: 35px;
+}
+
+.register .sect .custFontAwesome9 {
+    position: absolute;
+    color: #B8B8B8;
+    cursor: pointer;
+    top: 330px;
+    right: 420px;
+}
+
+.register .sect .custFontAwesome10 {
+    position: absolute;
+    color: #B8B8B8;
+    cursor: pointer;
+    top: 330px;
+    right: 35px;
+}
+
+@media only screen and (max-width: 767px) {
+    .register {
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+    .register .sect input {
+        float: left;
+        width: 95.5%;
+        margin: 2% 2% 0 2% !important;
+    }
+    
+    .register .sect button {
+        height: 50px;
+        width: 100%;
+        margin: 15px 0 15px 0; !important;
+    }
+    
+    .register .sect a {
+        float: none;
+    }
+    
+    .register .sect {
+        padding-bottom: 15px;
+    }
+    
+    .register .sect input[type=text], .register .sect input[type=email] {
+        padding-left: 0;
+    }
+    
+    .register .sect .custFontAwesome1 {
+        display: none;
+    }
+
+    .register .sect .custFontAwesome2 {
+        display: none;
+    }
+
+    .register .sect .custFontAwesome3 {
+        display: none;
+    }
+
+    .register .sect .custFontAwesome4 {
+        display: none;
+    }
+
+    .register .sect .custFontAwesome5 {
+        display: none;
+    }
+
+    .register .sect .custFontAwesome6 {
+        display: none;
+    }
+
+    .register .sect .custFontAwesome7 {
+        display: none;
+    }
+
+    .register .sect .custFontAwesome8 {
+        display: none;
+    }
+
+    .register .sect .custFontAwesome9 {
+        display: none;
+    }
+
+    .register .sect .custFontAwesome10 {
+        display: none;
+    }
+}
+
+/*-----------------------------------------------REGISTER.HTML-END------------------------------------------------*/
+
+/*-----------------------------------------------LISTA.HTML-START------------------------------------------------*/
+
+.tableList {
+    
+    margin-left: 15px;
+    margin-top: 70px;
+}
+
+a.anterior {
+    float: left;
+    height: 30px;
+    width: 75px;
+    background: #68466A;
+    background: -webkit-linear-gradient(#77507A, #68466A);
+    background: -o-linear-gradient(#77507A, #68466A);
+    background: -moz-linear-gradient(#77507A, #68466A);
+    background: linear-gradient(#77507A, #68466A);
+    border-radius: 3px;
+    border: 0;
+    color: #FFF!important;
+    margin-top: 14px!important;
+    font-weight: bolder;
+    font-size: 11px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+a.signList {
+    height: 30px;
+    width: 75px;
+    background: #68466A;
+    background: -webkit-linear-gradient(#77507A, #68466A);
+    background: -o-linear-gradient(#77507A, #68466A);
+    background: -moz-linear-gradient(#77507A, #68466A);
+    background: linear-gradient(#77507A, #68466A);
+    border-radius: 3px;
+    border: 0;
+    color: #FFF!important;
+    margin-top: 14px!important;
+    font-weight: bolder;
+    font-size: 11px;
+    margin: 15px;
+    cursor: pointer;
+    
+}
+
+/*-----------------------------------------------LISTA.HTML-END------------------------------------------------*/

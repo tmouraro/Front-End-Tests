@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/onda.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/lista.js"></script>
+</head>
+<body>
+    <section>
+        <form action="#" method="post" class="register">
+            <div class="header">
+                <h3>Register</h3>
+            </div>
+            <div class="sect">
+                <div class="tableList">
+                    <table id="playlistTable">
+                      <thead>
+                        <tr>
+                          <th>POI</th>
+                          <th>Coordenada X</th>
+                          <th>Coordenada Y</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>Lanchonete</td>
+                          <td>x= 27</td>
+                          <td>y= 12</td>
+                        </tr>
+                       <tr>
+                          <td>Posto</td>
+                          <td>x= 31</td>
+                          <td>y= 18</td>
+                        </tr>
+                       <tr>
+                          <td>Joalheria</td>
+                          <td>x= 15</td>
+                          <td>y= 12</td>
+                        </tr>
+                       <tr>
+                          <td>Floricultura</td>
+                          <td>x= 19</td>
+                          <td>y= 21</td>
+                        </tr>
+                      <tr>
+                          <td>Pub</td>
+                          <td>x= 12</td>
+                          <td>y= 8</td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                </div>
+                <input type="text" id="X" name="x" placeholder="Coordenada X" required>
+                <input type="text" id="Y" name="y" placeholder="Coordenada y" required>
+                <button type="submit" class="buscar">
+                    Buscar
+                </button><button type="submit" class="buscarTudo">
+                    Buscar Tudo
+                </button>
+                <a href="login.html" class="anterior"><p style="margin: 8px;">Exit</p></a>                
+            </div>
+        </form>
+    </section>
+</body>
+</html>
